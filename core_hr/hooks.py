@@ -95,13 +95,14 @@ app_license = "MIT"
 # ---------------
 # Hook on document methods and events
 
-# doc_events = {
-# 	"*": {
-# 		"on_update": "method",
-# 		"on_cancel": "method",
-# 		"on_trash": "method"
-#	}
-# }
+doc_events = {
+	"Employee Advance": {
+		"on_submit": "core_hr.core_hr.custom.employee_advance.create_payment_entry",
+	},
+	"Payment Entry":{
+		"on_submit":"core_hr.core_hr.custom.payment_entry.create_additional_salary"
+	},
+}
 
 # Scheduled Tasks
 # ---------------
