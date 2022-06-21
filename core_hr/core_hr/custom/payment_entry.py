@@ -1,7 +1,7 @@
 import frappe
 def create_additional_salary(doc,action):
-    ts_value=frappe.get_doc("Core HR Settings")
-    if ts_value.ts_employee_advance_automation==1:
+    ts_employee_advance_automation = frappe.db.get_single_value("Core HR Settings", "ts_employee_advance_automation")
+    if ts_employee_advance_automation==1:
         for i in doc.references:
             if(i.reference_doctype=='Employee Advance'):
                 advance_doc=frappe.get_doc('Employee Advance',i.reference_name)
