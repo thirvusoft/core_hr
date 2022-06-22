@@ -1,0 +1,61 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2022-06-20 12:01:43.958884",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "ts_enable_hr_features_section",
+  "ts_employee_advance_automation",
+  "column_break_3",
+  "ts_job_opening_indicator"
+ ],
+ "fields": [
+  {
+   "fieldname": "column_break_3",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "ts_enable_hr_features_section",
+   "fieldtype": "Section Break",
+   "label": "Enable HR Features"
+  },
+  {
+   "default": "0",
+   "description": "To Make The Employee Advance Easier",
+   "fieldname": "ts_employee_advance_automation",
+   "fieldtype": "Check",
+   "label": "Employee Advance Automation"
+  },
+  {
+   "default": "0",
+   "description": "Open --> Green & Close --> Red",
+   "fieldname": "ts_job_opening_indicator",
+   "fieldtype": "Check",
+   "label": "Job Opening Indicator"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "issingle": 1,
+ "links": [],
+ "modified": "2022-06-20 12:21:06.001788",
+ "modified_by": "Administrator",
+ "module": "Core Hr",
+ "name": "Core HR Settings",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "print": 1,
+   "read": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC"
+}
