@@ -58,7 +58,7 @@ doctype_list_js = {"Job Opening":"core_hr/custom/js/job_opening_list.js"}
 
 # before_install = "core_hr.install.before_install"
 # after_install = "core_hr.install.after_install"
-
+after_install="core_hr.core_hr.utils.after_install.after_install"
 # Uninstallation
 # ------------
 
